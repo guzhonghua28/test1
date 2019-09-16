@@ -136,6 +136,7 @@ return [
         // 'Illuminate\Html\HtmlServiceProvider', // Example
 
         'System\ServiceProvider',
+		Mews\Purifier\PurifierServiceProvider::class,
     ]),
 
     /*
@@ -152,6 +153,7 @@ return [
     'aliases' => array_merge(include(base_path('modules/system/aliases.php')), [
 
         // 'Str' => 'Illuminate\Support\Str', // Example
+		'Purifier' => Mews\Purifier\Facades\Purifier::class,
 
     ]),
 
